@@ -2,3 +2,5 @@ spring:
     application:
         name: zuul-service
 
+server:
+    port: 4000
