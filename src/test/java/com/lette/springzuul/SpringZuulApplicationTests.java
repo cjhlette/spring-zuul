@@ -1,4 +1,4 @@
-package com.example.springzuul;
+package com.lette.springzuul;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
