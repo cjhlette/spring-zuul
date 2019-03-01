@@ -11,7 +11,7 @@ import com.netflix.zuul.context.RequestContext;
 public class Filter extends ZuulFilter {
 
 	//private static Logger log = LoggerFactory.getLogger(Filter.class);
-	
+	private static Logger log = LoggerFactory.getLogger(Filter.class);
 	
 	  @Override
 	  public String filterType() {
@@ -33,7 +33,9 @@ public class Filter extends ZuulFilter {
 	  {
 		  RequestContext ctx = RequestContext.getCurrentContext();
 		  HttpServletRequest request = ctx.getRequest();
-		  
+
+		  log.info("zuul test");
+
 		  return null;
 		  
 	  }
